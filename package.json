@@ -1,0 +1,50 @@
+{
+  "name": "terminal-music-player",
+  "version": "1.0.0",
+  "description": "A terminal-based music player built with Node.js: play, pause, stop and navigate songs entirely from the command line.",
+  "author": "sanath-2512",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanath-2512/terminal-application.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanath-2512/terminal-application/issues"
+  },
+  "homepage": "https://github.com/sanath-2512/terminal-application#readme",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "music-player": "bin/music-player.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/music-player.js",
+    "list": "node bin/music-player.js --list",
+    "doctor": "node bin/music-player.js --doctor",
+    "generate-songs": "node scripts/generate-songs.js",
+    "test": "node --test \"test/*.test.js\"",
+    "test:watch": "node --test --watch \"test/*.test.js\""
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "music",
+    "player",
+    "audio",
+    "mp3",
+    "nodejs"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lamejs": "1.2.1"
+  }
+}
